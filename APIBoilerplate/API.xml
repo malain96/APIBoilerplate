@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.Controllers.WeatherForecastController.Get(API.DTOs.WeatherForecast.GetWeatherForecastRequest)">
+            <summary>
+            Swagger comment
+            </summary>
+            <param name="request">Request data</param>
+            <returns>Response for the request</returns>
+        </member>
+        <member name="M:API.Controllers.WeatherForecastController.GetAuthorize(API.DTOs.WeatherForecast.GetWeatherForecastRequest)">
+            <summary>
+            Swagger comment Authorize
+            </summary>
+            <param name="request">Request data</param>
+            <returns>Response for the request</returns>
+        </member>
+        <member name="M:API.Controllers.WeatherForecastController.GetAdmin(API.DTOs.WeatherForecast.GetWeatherForecastRequest)">
+            <summary>
+            Swagger comment Admin
+            </summary>
+            <param name="request">Request data</param>
+            <returns>Response for the request</returns>
+        </member>
+        <member name="T:API.Shared.DTOs.ErrorResponse">
+            <summary>
+            Error message returned by the API
+            </summary>
+        </member>
+        <member name="T:API.Shared.DTOs.PagedAndSortedRequest">
+            <summary>
+            Input for requests that needs pagination and sorting
+            </summary>
+        </member>
+        <member name="T:API.Shared.DTOs.PagedAndSortedResponse`1">
+            <summary>
+            Reponse for requests that needs pagination and sorting
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:API.Extensions.PagedAndSortedList`1">
+            <summary>
+            Provides a paged and sorted list of T
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:API.Middlewares.CallsLoggingMiddleware">
+            <summary>
+            Log API calls and responses
+            </summary>
+        </member>
+        <member name="M:API.Middlewares.CallsLoggingMiddleware.LogRequest(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Log a call to an API route
+            </summary>
+            <param name="context">The request</param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:API.Middlewares.CallsLoggingMiddleware.LogResponse(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Log the response to an API route
+            </summary>
+            <param name="context">The request</param>
+        </member>
+    </members>
+</doc>
